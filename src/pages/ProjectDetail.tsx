@@ -7,7 +7,7 @@ export default function ProjectDetail() {
   const projectData = {
     'web-development': {
       title: 'Web Development Projects',
-      description: 'A collection of modern web applications showcasing full-stack development skills',
+      description: 'A collection of modern web applications showcasing full-stack development skills.',
       projects: [
         {
           name: 'E-commerce Platform',
@@ -31,7 +31,7 @@ export default function ProjectDetail() {
     },
     'ui-ux-design': {
       title: 'UI/UX Design Portfolio',
-      description: 'User-centered design solutions focusing on accessibility and user experience',
+      description: 'User-centered design, focusing on accessibility and user experience.',
       projects: [
         {
           name: 'Mobile Banking App',
@@ -88,7 +88,7 @@ export default function ProjectDetail() {
   return (
     <div className="space-y-8">
       <div className="space-y-4">
-        <h1 className="text-4xl font-bold text-black">{project.title}</h1>
+        <h1 className="text-4xl font-semibold text-black">{project.title}</h1>
         <p className="text-gray-700 text-lg max-w-3xl">{project.description}</p>
       </div>
       

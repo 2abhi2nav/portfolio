@@ -9,7 +9,6 @@ export default function Navigation() {
 
   const navItems = [
     { name: 'Home', path: '/' },
-    { name: 'Resume', path: '/resume' },
     { name: 'Projects', path: '/projects' },
     { name: 'Contact', path: '/contact' },
   ];
@@ -26,7 +25,7 @@ export default function Navigation() {
     <>
       <nav className="bg-black text-white px-6 py-4 relative">
         <div className="max-w-7xl mx-auto flex items-center justify-between">
-          <div className="text-xl font-bold">Full Name</div>
+          <div className="text-xl font-semibold">Abhinav Renjith</div>
           
           {/* Desktop Navigation */}
           <div className="hidden portrait:hidden landscape:flex space-x-8">
@@ -76,7 +75,7 @@ export default function Navigation() {
       )}>
         <div className="p-6">
           <div className="flex items-center justify-between mb-8">
-            <h2 className="text-xl font-bold text-black">Menu</h2>
+            <h2 className="text-xl font-semibold text-black">Menu</h2>
             <button
               onClick={closeMobileMenu}
               className="p-2 hover:bg-gray-100 rounded-md transition-colors"
