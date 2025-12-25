@@ -69,12 +69,10 @@ const Home = () => {
       <section className="about-section">
         <h1>About Me</h1>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          Hey! I'm Abhinav, a third-year computer science student. I'm passionate about web development, DevOps, software design, and game development. I specialize in React and Spring Boot, and I'm familiar with tools such as Git, Docker, GitHub Actions, and Unity. I also love UI/UX design, and am extremely familiar with good design principles and tools such as Figma. 
         </p>
         <p>
-          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-          Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          I aim to adhere to the principles of reliability, ease of use, and attention to detail in everything I create. 
         </p>
       </section>
     </div>
@@ -129,14 +127,23 @@ const Projects = () => {
 
           <section id="games">
             <h2>Video Games</h2>
-            <h3>Space Invaders Clone</h3>
-            <p>Built using Unity and C.</p>
+            <h3>Pathogen Protocol</h3>
+            <p>A real-time strategy game in which you control the production and movement of your body's immune cells, in order to fight off an infection and protect your organs.</p>
+            <p><b>Tech Stack:</b> Unity, C#</p>
+            <br />
+
+            <h3>Bomberwing</h3>
+            <p>A Flappy Bird clone, completely revamped with a whole bunch of new mechanics, such as projectile lobbing, wall-breaking, powerups, and bullet avoidance.</p>
+            <p><b>Tech Stack:</b> Unity, C#</p>
+            <br />
           </section>
 
           <section id="misc">
             <h2>Miscellaneous</h2>
-            <h3>Python Scripts</h3>
-            <p>Automation scripts for daily tasks.</p>
+            <h3>Quantum Crop Simulator</h3>
+            <p>A gene simulator that implements a Hybrid Quantum-Classical Genetic Algorithm (HQGA) using Quantum Rotation Gates to optimize gene selection and maximize resilience to harsh climatic conditions.</p>
+            <p>Achieves almost 42% higher average fitness scores than the Classical Genetic Algorithm.</p>
+            <p><b>Tech Stack:</b> Python, Qiskit, NumPy</p>
           </section>
         </div>
       </div>
@@ -170,7 +177,7 @@ const Resume = () => (
   <div>
     <h1>Resume</h1>
     <div className="resume-fallback">
-      <a href="/resume.pdf" target="_blank" rel="noopener noreferrer">
+      <a href={`${process.env.PUBLIC_URL}/resume.pdf`} target="_blank" rel="noopener noreferrer">
         <button style={{padding: '10px 20px', cursor: 'pointer'}}>Download</button>
       </a>
     </div>
