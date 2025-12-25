@@ -69,10 +69,10 @@ const Home = () => {
       <section className="about-section">
         <h1>About Me</h1>
         <p>
-          Hey! I'm Abhinav, a third-year computer science student. I'm passionate about web development, DevOps, software design, and game development. I specialize in React and Spring Boot, and I'm familiar with tools such as Git, Docker, GitHub Actions, and Unity. I also love UI/UX design, and am extremely familiar with good design principles and tools such as Figma. 
+          Hey! I'm Abhinav, a third-year computer science student. I'm passionate about web development, DevOps, software design, and game development. I specialize in React and Spring Boot, and I'm familiar with tools such as Git, Docker, GitHub Actions, and Unity. I also love UI/UX design, and am extremely familiar with good design principles and tools such as Figma.
         </p>
         <p>
-          I aim to adhere to the principles of reliability, ease of use, and attention to detail in everything I create. 
+          I aim to adhere to the principles of reliability, ease of use, and attention to detail in everything I create.
         </p>
       </section>
     </div>
@@ -102,7 +102,7 @@ const Projects = () => {
         <div className="project-content">
           <section id="web">
             <h2>Web Applications</h2>
-            
+
             <h3>The Metro Congestion Control System</h3>
             <p>A complete platform with distinct passenger booking and admin monitoring interfaces, designed to facilitate the monitoring of stations, make ticket booking easier, and reduce station overcrowding by dynamically reallocating passengers and taking advantage of other modes of transport.</p>
             <p>Also provides an easy-to-use interface for requesting wheelchairs and emergency tickets.</p>
@@ -181,11 +181,17 @@ const Resume = () => (
         <button style={{padding: '10px 20px', cursor: 'pointer'}}>Download</button>
       </a>
     </div>
-    <iframe
-      src="/resume.pdf"
-      title="Resume"
+    <object
+      data={`${process.env.PUBLIC_URL}/resume.pdf`}
+      type="application/pdf"
+      width="100%"
+      height="800px"
       className="resume-frame"
-    />
+    >
+      <p>It appears your browser doesn't support embedded PDFs.
+        <a href={`${process.env.PUBLIC_URL}/resume.pdf`}></a>
+      </p>
+    </object>
   </div>
 );
 
