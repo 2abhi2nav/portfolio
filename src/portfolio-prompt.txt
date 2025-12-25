@@ -1,0 +1,15 @@
+I need to make a portfolio website in React and deploy it to Github pages. It should have pretty wide margins on both the left and right, and a thin navigation bar on the top, with the following links: about, projects, experience, resume and a dark mode toggle button. 
+I'll specify heading styles in markdown format, using hashes.
+The home page should just display a frame for an image, probably a rounded square, with # text below for my name, and body text for a caption. When the page loads, make the name have a terminal typing animation (with a block cursor), then make the caption load with a similar effect. Below the caption, insert a bunch of social media icons: github, linkedin, discord, and mail, with hyperlinks that I'll insert myself.
+The about page should just have a # title at the top, along with placeholder text for the body.
+The projects page should also have a # title saying "projects" with a sidebar with the following project type links: Web applications, Android applications, Video games, UI/UX, Miscellaneous. These should act like the contents pane of Wikipedia, teleporting the user to various points on the same page. Each project type should have a ## title on the page, and the project titles should be in ### style. Add placeholder body text for each project.
+The experience page should have a # title saying experience, along with ## placeholder text for each company, #### text below for the duration/dates, and body placeholder text for each company.
+The resume page should either have a pdf embedded into a placeholder, or redirect you to an external pdf viewer. I'm not sure, recommend the best method to show it.
+Add a small footer (only if required), with my name and the year.
+
+For the styling, ensure the website doesn't use any gradients, and avoid glassmorphism. Simple, corporate-looking flat design should suffice, with geometric shapes in the background that switch colors depending on the theme (light/dark). Use either Raleway or PT Sans (it should load even if they aren't installed on the user's system). Don't make it responsive now, I'll do it later.
+
+make bar margins smaller
+add underline to current page
+small arrow symbol
+
