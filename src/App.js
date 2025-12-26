@@ -178,7 +178,7 @@ const Resume = () => (
     <h1>Resume</h1>
     <div className="resume-fallback">
       <a href={`${process.env.PUBLIC_URL}/resume.pdf`} target="_blank" rel="noopener noreferrer">
-        <button style={{padding: '10px 20px', cursor: 'pointer'}}>Download</button>
+        <button className="download-btn">Download PDF Version</button>
       </a>
     </div>
     <object

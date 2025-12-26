@@ -9,7 +9,9 @@ Add a small footer (only if required), with my name and the year.
 
 For the styling, ensure the website doesn't use any gradients, and avoid glassmorphism. Simple, corporate-looking flat design should suffice, with geometric shapes in the background that switch colors depending on the theme (light/dark). Use either Raleway or PT Sans (it should load even if they aren't installed on the user's system). Don't make it responsive now, I'll do it later.
 
-make bar margins smaller
-add underline to current page
-small arrow symbol
 
+use ubuntu sans
+change heading weights
+remove blue
+make download button green
+make lines grey and thinner

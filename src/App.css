@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Sans:ital,wght@0,100..800;1,100..800&display=swap');
 
 :root {
   /* Light Mode Variables */
@@ -10,14 +10,14 @@
   --nav-active: #ffffff;
   --shape-color-1: #d1d1d1;
   --shape-color-2: #c4c4c4;
-  --accent-color: #0056b3;
+  --accent-color: #005abc;
   --cursor-color: #333;
 }
 
 [data-theme='dark'] {
   /* Dark Mode Variables */
   --bg-color: #1a1a1a;
-  --text-color: #e0e0e0;
+  --text-color: #ffffff;
   /* Navbar color from image, same as light mode */
   --nav-bg: #333333;
   --nav-text: #e0e0e0;
@@ -30,7 +30,8 @@
 
 body {
   margin: 0;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Ubuntu Sans', sans-serif;
+  line-height: 1.5;
   background-color: var(--bg-color);
   color: var(--text-color);
   transition: background-color 0.3s ease, color 0.3s ease;
@@ -73,9 +74,9 @@ body {
 /* New Brand Style */
 .nav-brand {
   text-decoration: none;
-  font-weight: 700;
+  font-weight: 600;
   font-size: 1.2rem;
-  color: var(--accent-color); /* Brand remains accent color */
+  color: var(--nav-text); /* Brand remains accent color */
   text-transform: uppercase;
 }
 
@@ -88,7 +89,7 @@ body {
   margin-left: 20px;
   text-decoration: none;
   color: var(--nav-text);
-  font-weight: 700;
+  font-weight: 600;
   text-transform: uppercase;
   position: relative;
   padding-bottom: 3px; /* Space for underline */
@@ -99,7 +100,6 @@ body {
   color: var(--nav-active);
 }
 
-/* Active Link Highlight (from image) */
 .nav-links a.active {
   color: var(--nav-active);
 }
@@ -148,12 +148,52 @@ body {
   background-color: var(--shape-color-2);
   border-radius: 20px;
 }
+.download-btn {
+  padding: 10px 20px;
+  cursor: pointer;
+  background-color: #0e8420;
+  color: white;
+  border: none;
+  border-radius: 0; /* Square corners */
+  font-family: 'Ubuntu Sans', sans-serif;
+  font-weight: 550;
+  transition: background-color 0.2s ease;
+}
+
+.download-btn:hover {
+  background-color: rgb(11.5, 108.9, 26.4); /* Slightly lighter on hover */
+}
 
 /* Typography */
-h1 { font-size: 2.5rem; border-bottom: 2px solid var(--text-color); padding-bottom: 10px; margin-bottom: 20px; }
-h2 { font-size: 1.8rem; margin-top: 30px; color: var(--accent-color); }
-h3 { font-size: 1.4rem; margin-bottom: 5px; }
-h4 { font-size: 1rem; color: #888; margin-top: 0; font-style: italic; }
+h1 { 
+  font-size: 2.6rem; 
+  font-weight: 600; /* Medium-Bold for high impact */
+  border-bottom: 1px solid var(--text-color); 
+  padding-bottom: 10px; 
+  margin-bottom: 20px; 
+  letter-spacing: -0.5px; /* Tighter tracking for large headings */
+}
+
+h2 { 
+  font-size: 2.0rem; 
+  font-weight: 200; /* The signature Ubuntu "Thin" look */
+  margin-top: 30px; 
+  color: var(--accent-color); 
+  letter-spacing: -0.2px;
+}
+
+h3 { 
+  font-size: 1.6rem; 
+  font-weight: 600; /* Strong bolding for project/section titles */
+  margin-bottom: 5px; 
+}
+
+h4 { 
+  font-size: 1rem; 
+  font-weight: 400; /* Regular weight for dates/metadata */
+  color: #888; 
+  margin-top: 0; 
+}
 
 /* --- Home Page Layout --- */
 .home-container {
@@ -207,12 +247,12 @@ h4 { font-size: 1rem; color: #888; margin-top: 0; font-style: italic; }
 /* Typing Animation */
 .typing-container {
   display: inline-block;
-  font-family: 'Consolas', 'DejaVu Sans Mono', monospace;
+  font-family: 'Consolas', monospace;
   margin-bottom: 2rem;
 }
 .cursor {
   display: inline-block;
-  width: 10px;
+  width: 1ch;
   background-color: var(--cursor-color);
   animation: blink 1s step-end infinite;
 }
